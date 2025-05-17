@@ -41,6 +41,7 @@
    cd project-backend
 
 2. Install dependencies:
+    ```bash
     composer install
 
 3. Konfigurasi environment
@@ -53,18 +54,23 @@
     DB_PASSWORD=password
 
 4. Generate application key:
+    ```bash
     php artisan key:generate
 
 5. Jalankan migrasi database:
+    ```bash
     php artisan migrate
 
 6. (Opsional) Seed database:
+    ```bash
     php artisan db:seed
 
 7. Jalankan server development:
+    ```bash
     php artisan serve
 
 8. API dapat diakses di:
+    ```bash
     http://localhost:8000/api
 
 ## 4. Tantangan & Solusi
