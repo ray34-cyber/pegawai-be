@@ -73,9 +73,6 @@
 
 - Menjaga agar logika bisnis perhitungan remunerasi tidak tersebar di berbagai tempat.
 
-- Validasi data yang kompleks, seperti unik task per employee, memerlukan custom
-    validation rule.
-
 - Mengelola update data remunerasi saat data employee atau task berubah agar
     konsisten.
 
@@ -86,8 +83,6 @@
 ### Solusi
 
 - Menggunakan Clean Architecture dengan service layer untuk pemisahan logika bisnis.
-
-- Membuat custom validation rule Laravel untuk aturan bisnis khusus.
 
 - Membuat method terpisah updateTaskRemuneration yang terpusat untuk mengelola update
     remunerasi.
