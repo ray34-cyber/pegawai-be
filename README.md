@@ -45,7 +45,8 @@
     composer install
 
 3. Konfigurasi environment
-   Salin .env.example menjadi .env, lalu sesuaikan konfigurasi database dan lainnya:
+
+    Salin .env.example menjadi .env, lalu sesuaikan konfigurasi database dan lainnya:
 
     ```env
     DB_CONNECTION=mysql
