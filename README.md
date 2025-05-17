@@ -9,7 +9,7 @@
 - Data task, employee, dan remunerasi disimpan di database relasional.
 - Memakai arsitektur Clean Architecture (Controller → Service → Repository) untuk pemisahan tanggung jawab dan mudah pengujian.
 - Perhitungan remunerasi dilakukan di Service Layer untuk memastikan logika bisnis terpusat dan reusable.
-- Validasi request menggunakan Laravel Form Request dan Custom Validation Rule (misalnya `UniqueTaskPerEmployee`).
+- Validasi request menggunakan Laravel Form Request.
 - Endpoint API menggunakan resource controller (`apiResource`) untuk CRUD operasi.
 
 ---
@@ -19,7 +19,6 @@
 - **Clean Architecture** memudahkan maintenance dan scalability dengan pemisahan antara controller, service, dan repository.
 - **Service Layer** mengelola logika bisnis, seperti perhitungan remunerasi dan update data terkait.
 - **Repository Pattern** untuk abstraksi akses database dan memudahkan penggantian storage atau testing.
-- **Custom Validation Rule** memastikan aturan bisnis terpenuhi sebelum data disimpan (misal tidak boleh ada duplikasi tugas per employee).
 - **Error handling** menggunakan exception handler Laravel untuk memberikan response yang konsisten.
 - Integrasi dengan frontend melalui API JSON yang terstruktur dan mudah dipanggil.
 
@@ -31,8 +30,8 @@
 
 - PHP >= 8.x
 - Composer
-- Database MySQL/PostgreSQL
-- Server web (Apache/Nginx)
+- Database MySQL
+- Server web Apache
 
 ### Instalasi
 
